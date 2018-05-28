@@ -1,0 +1,18 @@
+{
+  "fs/*.cpp": {
+    "alternate": "fs/{}.h",
+    "type": "source"
+  },
+  "fs/*.h": {
+    "alternate": "fs/{}.cpp",
+    "type": "header"
+  },
+  "lib/*.cpp": {
+    "alternate": "include/fuse-cpp/{}.h",
+    "type": "source"
+  },
+  "include/fuse-cpp/*.h": {
+    "alternate": "lib/{}.cpp",
+    "type": "header"
+  }
+}
