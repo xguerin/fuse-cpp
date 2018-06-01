@@ -69,15 +69,11 @@ set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-g -O3")
 # Dependencies checks
 #
 
-find_package(TCLAP REQUIRED)
 find_package(FUSE REQUIRED)
-
-include_directories(${TCLAP_INCLUDE_DIR})
 include_directories(${FUSE_INCLUDE_DIR})
 
 #
 # Subdirectories
 #
 
-add_subdirectory(fs)
 add_subdirectory(lib)
